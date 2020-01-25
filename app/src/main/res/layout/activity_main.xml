@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#9bc1cc"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/tvTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MASUKKAN DUA ANGKA"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/etAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka Pertama"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/etAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="6dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="number"
+        tools:ignore="Autofill,LabelFor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#7c9aa3"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textStyle="bold"
+            android:layout_marginLeft="4dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="-"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/btKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="x"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/btBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textStyle="bold"
+            android:layout_marginRight="4dp"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bersihkan"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Hasil"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</LinearLayout>
